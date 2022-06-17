@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light:hsl(0, 0%, 95%);
+
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  font-size: 15px;  
+}
+@font-face {
+    font-family:lexend;
+    src: url(LexendDeca-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: Big;
+    src: url(BigShouldersDisplay-Bold.ttf) format('truetype');
+}
+.btn{
+    
+    margin-left: 50px;
+    color: white;
+    background-color: black;
+}
+.container{
+    display: flex;
+    margin:130px auto 30px auto;
+    flex: 1;
+    width: 1440px;
+    max-width:60%;
+   min-height:65vh;
+justify-content: center;
+}
+.container div{
+    max-width: 33.33%;
+    padding:30px;
+}
+.container div h1{
+    color:var(--light) ;
+    font-family: big;
+    margin-bottom: 30px;
+}
+.container div p{
+    font-family: lexend;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 60px;
+    line-height: 1.5rem;
+}
+.container div svg{
+   margin-bottom: 30px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid ;
+    font-family: lexend;
+    background-color: var(--light);
+}
+.sedans{
+    background-color:hsl(31, 77%, 52%) ;
+    border-radius: 10px 0 0 10px;
+}
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+.sedans button:hover{
+    color: var(--light);
+    cursor: pointer;
+    border:2px solid var(--light) ;
+    background-color: transparent;
+}
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+.suvs button:hover{
+    color: var(--light);
+    cursor: pointer;
+    border:2px solid var(--light) ;
+    background-color: transparent;
+}
+.luxury{
+    background-color:hsl(179, 100%, 13%) ;
+    border-radius: 0 10px 10px 0;
+}
+.luxury button{
+    color:hsl(179, 100%, 13%) ;
+    
+}
+.luxury button:hover{
+    color: var(--light);
+    cursor: pointer;
+    border:2px solid var(--light) ;
+    background-color: transparent;
+}
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        min-width: 100%;
+        margin: 30px auto;
+    
+    }
+    .container div{
+        min-width: 75%;
+    }
+    button{
+        margin-bottom: 30px;
+    }
+    .sedans{
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
+/*@media (min-width:768px) and (max-width:1400px){
+    .container{
+        max-width: 80%;
+    }
+}*/
+

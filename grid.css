@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.btn{
+    
+    margin-left: 30px;
+    color: white;
+    background-color:#212624 ;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid ;
+}
+.container{
+    margin: 50px auto auto auto;
+    width: 910px;
+    height:554px;
+    padding: 30px 200px 40px 50px;
+    background-color: #212624;
+    
+    display: grid;
+    grid-template-rows: 1fr 0.45fr 0.55fr;
+    grid-template-columns: 50% 20% 30%;
+    grid-template-areas:
+    "A A B"
+    "C D D"
+    "C E E";
+    gap: 12px;
+}
+.orange{
+    background-color: orangered;
+    grid-area: A;
+}
+.yellow{
+    background-color: rgb(219, 172, 15);
+    grid-area: B;
+}
+.green{
+    background-color: rgb(0, 128, 47);
+    grid-area: C;
+}
+.blue{
+    background-color: lightseagreen;
+    grid-area: D;
+}
+.blue1{
+    background-color: lightseagreen;
+    grid-area: E;
+}
+
